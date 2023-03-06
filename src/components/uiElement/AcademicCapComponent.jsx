@@ -3,8 +3,8 @@ import {SlGraduation} from 'react-icons/sl'
 
 export default function AcademicCapComponent(props) {
     return (
-        <Flex bg={props.bg} w={props.w} h={props.h} borderRadius={props.borderRadius} alignItems='center' justifyContent='center'>
-            <SlGraduation {...props} />    
+        <Flex {...props} w='60px' h='60px' borderRadius='50%' alignItems='center' justifyContent='center'>
+            <SlGraduation fontSize='35px' />    
         </Flex>
         
   )

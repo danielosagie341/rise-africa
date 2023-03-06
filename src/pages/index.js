@@ -3,13 +3,12 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import DoubleButtonComponent from '@/components/form/DoubleButtonComponent'
 import AcademicCapComponent from '@/components/uiElement/AcademicCapComponent'
-import Hero from '@/components/uiElement/Hero'
-
+import HomePage from './HomePage'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-   <Hero />
+   <HomePage />
   )
 }

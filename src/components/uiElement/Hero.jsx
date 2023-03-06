@@ -7,20 +7,21 @@ import ImageComponent from './ImageComponent'
 
 const Hero = () => {
   return (
-      <Box>
-          <Header />
+    <Box>
 
-          <Box h={'950px'}  overflow="hidden" borderBottomRadius={'350px'}  bg={'#1459FE'}>
-            
-          <Flex w={'100%'} textAlign='center' alignItems='center' justifyContent='center' flexDirection='column' paddingX={'25%'} paddingY={'90px'}>
-            <BodyText color='white' fontSize={'70px'} fontWeight={'bold'} marginY={'10px'} >Growing the future tech talents of Africa</BodyText>
-            <BodyText paddingX={'90px'} fontSize={'25px'} fontWeight={'thin'} color='white' >Empowering African youths with the right tool, resources, and support to achieve their dream careers in tech.</BodyText>
-            <DoubleButtonComponent />  
-          </Flex>
+      <Box h={{base:'1000px', md:'1000px'}}  overflow="hidden" borderBottomRadius={{base:'0px', md:'350px'}}  bg={'#1459FE'} >
+        
+        <Flex w={'100%'} textAlign='center' alignItems='center' justifyContent='center' flexDirection='column' paddingX={{base:'10px', md:'25%'}} paddingY={'90px'}>
+          <BodyText color='white' fontSize={{base:'40px', md:'70px'}} fontWeight={'bold'} marginY={{base:'0px', md:'10px'}} >Growing the future tech talents of Africa</BodyText>
+          <BodyText paddingX={{base:'10px', md:'90px%'}} fontSize={'25px'} fontWeight={'thin'} color='white' >Empowering African youths with the right tool, resources, and support to achieve their dream careers in tech.</BodyText>
+          <DoubleButtonComponent />  
+        </Flex>
 
-          <ImageComponent src={'./images/boy-and-clouds.png'} />
-          </Box>
+        <ImageComponent src={'./images/boy-and-clouds.png'} objectFit='cover' w={'full'} h={{base:'50%', md:''}} />
+          
       </Box>
+
+    </Box>
   )
 }
 
